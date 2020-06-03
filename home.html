@@ -38,38 +38,91 @@
             </div>
         </nav>
     </header>
-    <div class="card mb-3">
-        <div class="card-body text-right">
+    <div class="card bg-light mb-3">
+        <div class="card-body">
             <h3 class="card-title" style="text-align: center;">Welcome, name</h3>
         </div>
     </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card">
 
+    <section class="home-main">
+        <div class="container-fluid">
+            <div class="row">
+                <!--Sidebar-->
+                <div class="sidebar col-md-3 pl-0">
+                    <aside style="background: #f4f4f4;" class="text-center">
+                        <div class="profile-picture pt-4">
+                            <img src="assets/profile.jpg" id="profilepic-id" class="rounded-circle" width="250"
+                                height="250" alt="profile-picture">
+                        </div>
+                        <div class="details p-4 text-black">
+                            <h3 id="author-name">John Doe</h3>
+                            <h6 id="username">@JohnDoe98</h6>
+                        </div>
+                        <hr>
+                        <div class="location-details">
+                            <span>INDIA</span>
+                            <p>Kochi, Kerala</p>
+                        </div>
+                    </aside>
+                </div>
+                <!--Sidebar-->
+
+                <div class="col-md-9 bg-light">
+                    <div class="container">
+                        <!--blog-->
+                        <form class="pt-4" action="">
+                            <div id="blog-msg" class="alert"></div>
+                            <div class="form-group">
+                                <h5>Write something</h5>
+                                <textarea class="form-control" id="blog-post" rows="4"></textarea>
+                            </div>
+                            <input type="button" onclick="postblog()" value="Post">
+                        </form>
+                        <!--blog-->
+
+                        <div class="blog-heading mt-5 mr-auto">
+                            <h5 class="pb-3">Your blogs</h5>
+                            <div class="card m-1">
+                                <div class="card-body">
+                                    <h5 id="user-title"></h5>
+                                    <h6 id="blog-posted"></h6>
+                                    <small class="text-muted" id="user-username"></small>
+                                    <small class="text-muted" style="text-align: right;" id="post-date">&nbsp;&nbsp;Posted
+                                        on: 19/05/2020</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--footer start-->
+    <footer class="bg-dark p-1" id="footer">
+        <div class="container-fluid text-white">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="mx-auto text-center">Copyright &copy; 2020. Developed by <span>Tushar Balakrishnan</span>
+                    </p>
                 </div>
             </div>
         </div>
+    </footer>
+    <!--footer end-->
 
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h6>Copyright &copy; 2020</h6>
-                    </div>
-                </div>
-            </div>
 
-        </footer>
-        <script src="js/script.js"></script>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-        </script>
-        <script src="js/bootstrap.js"></script>
+    <script src="js/blogpost.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="js/bootstrap.js"></script>
 </body>
 
 </html>

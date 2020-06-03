@@ -10,16 +10,23 @@
     text-align: center;
     position: relative;
     bottom: 0;
-    width:100%;
+    width: 100%;
 }
 
-#profilepic-id{
+#profilepic-id {
     border: solid 3px;
-    border-color:grey;
+    border-color: grey;
 }
 
-@media(min-width:768px){
-    #footer{
+.sidebar {
+    height: 100%;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+}
+
+@media(min-width:768px) {
+    #footer {
         position: absolute;
     }
 }
