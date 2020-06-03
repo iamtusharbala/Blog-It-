@@ -7,6 +7,7 @@
     <title>Blog It | Profile</title>
     <link rel="stylesheet" href="css/style.css" type='text/css'>
     <link rel="stylesheet" href="css/bootstrap.css" type='text/css'>
+    <link rel="stylesheet" href="css/fontawesome.min.css">
 </head>
 
 <body>
@@ -37,32 +38,99 @@
             </div>
         </nav>
     </header>
-    <div class="card mb-3">
-        <div class="card-body text-right">
-            <h3 class="card-title" style="text-align: center;">Edit Profile</h3>
+
+    <section class="heading">
+        <div class="card bg-light mb-3">
+            <div class="card-body text-right">
+                <h3 class="card-title" style="text-align: center;">My Profile</h3>
+            </div>
         </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card">
-                    
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row p-5">
+                <!--Profile picture-->
+                <div class="col-md-4 col-12">
+                    <img src="assets/profile.jpg" id="profilepic-id" class="rounded-circle" width="300" height="300" alt="profile-picture">
+                    <section class="p-2">
+                        <!--Photo upload-->
+                        <form class="ml-auto p-3">
+                            <div class="form-group text-center">
+                                <input type="file" class="form-control-file" id="profilepictureupload">
+                            </div>
+                        </form>
+                        <!--Photo upload-->
+                    </section>
+                </div>
+                <!--Profile picture-->
+
+                <div class="col-md-8 col-12">
+                    <form>
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="First name">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Last name">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <input type="email" class="form-control" placeholder="E-mail">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 col">
+                                <input type="text" class="form-control" placeholder="Country">
+                            </div>
+                            <div class="col-md-4 col">
+                                <input type="text" class="form-control" placeholder="State">
+                            </div>
+                            <div class="col-md-4 col">
+                                <input type="text" class="form-control" placeholder="City">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <input type="password" class="form-control" placeholder="Change Password">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <input type="password" class="form-control" placeholder="Confirm new password">
+                            </div>
+                        </div>
+                        <div class="row ml-auto">
+                            <input class="btn btn-secondary" type="submit" value="Submit">
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
+    </section>
 
-        <footer>
-            <h6>Copyright &copy; 2020</h6>
-         </footer>
+    <!--footer start-->
+    <footer class="bg-dark p-1" id="footer">
+        <div class="container-fluid text-white">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="mx-auto text-center">Copyright &copy; 2020. Developed by <span>Tushar Balakrishnan</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--footer end-->
 
-        <script src="js/script.js"></script>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-        </script>
-        <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="js/bootstrap.js"></script>
 </body>
 
 </html>
