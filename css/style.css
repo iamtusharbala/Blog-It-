@@ -11,6 +11,7 @@
     position: relative;
     bottom: 0;
     width: 100%;
+    z-index: 2;
 }
 
 #profilepic-id {
@@ -27,7 +28,7 @@
 
 @media(min-width:768px) {
     #footer {
-        position: absolute;
+        position: relative;
     }
 }
 
