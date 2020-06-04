@@ -7,6 +7,7 @@ function postblog(){
     document.getElementById('user-username').innerHTML = user_name;
 
     var msg = document.getElementById('blog-msg')
+    document.getElementById('post-date').innerHTML= Date();
 
     if (blog === ""){
         msg.className = "alert alert-danger"
