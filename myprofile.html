@@ -7,7 +7,10 @@
     <title>Blog It | Profile</title>
     <link rel="stylesheet" href="css/style.css" type='text/css'>
     <link rel="stylesheet" href="css/bootstrap.css" type='text/css'>
-    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <!--font awesome cdn-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <!--font awesome cdn-->
 </head>
 
 <body>
@@ -21,18 +24,28 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
                     </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Profile <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Logout&nbsp;<i class="fas fa-sign-out-alt"></i><span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <!--
                     <li class="nav navbar-right dropdown navbar-nav">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Options
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Profile</a>
+                            <a class="dropdown-item" href="myprofile.html">Profile</a>
                             <a class="dropdown-item" href="#">Logout</a>
-                        </div>
+                        </div>-->
                     </li>
                 </ul>
             </div>
@@ -52,7 +65,8 @@
             <div class="row p-5">
                 <!--Profile picture-->
                 <div class="col-md-4 col-12">
-                    <img src="assets/profile.jpg" id="profilepic-id" class="rounded-circle" width="300" height="300" alt="profile-picture">
+                    <img src="assets/profile.jpg" id="profilepic-id" class="rounded-circle" width="300" height="300"
+                        alt="profile-picture">
                     <section class="p-2">
                         <!--Photo upload-->
                         <form class="ml-auto p-3">
